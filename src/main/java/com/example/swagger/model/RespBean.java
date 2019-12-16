@@ -3,9 +3,11 @@ package com.example.swagger.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.io.Serializable;
+
 
 @ApiModel
-public class RespBean {
+public class RespBean implements Serializable {
 
     @ApiModelProperty(value = "用户名")
     private String username;
